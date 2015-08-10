@@ -1,0 +1,7 @@
+<classloading xmlns="urn:jboss:classloading:1.0" 
+    name="ServicesRest.war"
+	domain="ServicesRest"
+	export-all="NON_EMPTY"
+	import-all="true"
+	parent-first="true">
+</classloading>

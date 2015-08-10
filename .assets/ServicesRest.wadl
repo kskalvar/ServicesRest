@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://wadl.dev.java.net/2009/02">
+  <doc xml:lang="en" title="ServicesRest"/>
+  <resources base="http://localhost:8080">
+    <resource path="ServicesRest/rest/myresource/json" id="GetCustomer">
+      <doc xml:lang="en" title="GetCustomer"/>
+      <method name="GET" id="GET">
+        <doc xml:lang="en" title="GET"/>
+        <request>
+          <param name="id" type="xs:string" required="false" default="" style="query" xmlns:xs="http://www.w3.org/2001/XMLSchema"/>
+        </request>
+        <response status="404 405 500">
+          <representation mediaType="text/html;charset=utf-8"/>
+        </response>
+        <response status="200">
+          <representation mediaType="text/plain"/>
+          <representation mediaType="application/xml"/>
+          <representation mediaType="application/json"/>
+        </response>
+      </method>
+    </resource>
+    <resource path="ServicesRest/rest/myresource/json" id="DeleteCustomer">
+      <doc xml:lang="en" title="DeleteCustomer"/>
+      <method name="DELETE" id="DELETE">
+        <doc xml:lang="en" title="DELETE"/>
+        <request>
+          <param name="id" type="xs:string" required="false" default="" style="query" xmlns:xs="http://www.w3.org/2001/XMLSchema"/>
+        </request>
+        <response status="415 500">
+          <representation mediaType="text/html;charset=utf-8"/>
+        </response>
+        <response status="204">
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+        </response>
+        <response status="200">
+          <representation mediaType="application/xml"/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+        </response>
+        <response status="200 201">
+          <representation mediaType="application/json"/>
+        </response>
+        <response status="">
+          <representation mediaType="application/xml"/>
+        </response>
+      </method>
+    </resource>
+    <resource path="ServicesRest/rest/myresource/json" id="CreateCustomer">
+      <doc xml:lang="en" title="CreateCustomer"/>
+      <method name="POST" id="POST">
+        <doc xml:lang="en" title="POST"/>
+        <request>
+          <representation mediaType="application/json"/>
+          <representation mediaType="application/xml"/>
+        </request>
+        <response status="">
+          <representation mediaType="application/json"/>
+          <representation mediaType="application/xml"/>
+        </response>
+        <response status="200">
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType="text/plain"/>
+          <representation mediaType=""/>
+          <representation mediaType="application/json"/>
+        </response>
+        <response status="400 404 406 415 500">
+          <representation mediaType="text/html;charset=utf-8"/>
+        </response>
+      </method>
+    </resource>
+    <resource path="ServicesRest/rest/myresource/json" id="UpdateCustomer">
+      <doc xml:lang="en" title="UpdateCustomer"/>
+      <method name="PUT" id="PUT">
+        <doc xml:lang="en" title="PUT"/>
+        <request>
+          <representation mediaType="application/json"/>
+        </request>
+        <response status="">
+          <representation mediaType="application/json"/>
+        </response>
+        <response status="500">
+          <representation mediaType="text/html;charset=utf-8"/>
+        </response>
+        <response status="200">
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType="application/json"/>
+        </response>
+        <response status="204">
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+        </response>
+        <response status="0">
+          <representation mediaType=""/>
+          <representation mediaType=""/>
+        </response>
+      </method>
+    </resource>
+    <resource path="ServicesRest/rest/myresource/json/getid" id="GetUniqueId">
+      <doc xml:lang="en" title="GetUniqueId"/>
+      <method name="GET" id="Method 1">
+        <doc xml:lang="en" title="Method 1"/>
+        <request/>
+        <response status="200">
+          <representation mediaType="application/json"/>
+        </response>
+      </method>
+    </resource>
+  </resources>
+</application>
